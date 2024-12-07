@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Objects</title>
+</head>
+
+<body>
+    <script>
+        // const product = {
+        //     name: 'shoe',
+        //     price: 2000
+
+        // };
+        // console.log(product);
+        // console.log(product.name);
+        // console.log(product.price);
+
+        // product.name='nike';
+        // console.log(product);
+
+        // product.newProperty = true;
+        // console.log(product);   
+
+        // delete product.newProperty;
+        // console.log(product);
+
+        /*const pro = {
+            name: 'shirt',
+            'deliver-time': '1 day',
+            rating: {
+                stars: 4,
+                count: 85
+            },
+            fun: function function1() {
+                console.log('function inside object');
+
+            }
+        };
+        console.log(pro);
+        console.log(pro.name);
+        console.log(pro['name']);
+        console.log(pro['deliver-time']);
+        console.log(pro.rating.count);
+        pro.fun();
+
+        console.log(typeof console.log);
+
+        console.log(typeof JSON.stringify(pro));
+        console.log(JSON.stringify(pro));
+        const jsonString = JSON.stringify(pro);
+        console.log(JSON.parse(jsonString)); */
+
+
+        // let x;
+        // let y = 3;
+        // let z = null;
+        // console.log(x);
+        // console.log(typeof y);
+        // console.log(typeof z);
+
+        // let n = 12;
+        // console.log(typeof (n));
+        // console.log(typeof console.log);
+
+
+        // function hoisting
+        // fun();
+        // function fun() {
+        //     a = 1;
+        //     console.log(a);
+        //     var a;
+        // }
+
+        // // variable hoisting
+        // a = 3;
+        // console.log(a);
+        // var a;
+
+        // //for in loop 
+        // let person = { name: "shru", age: 24, gender: "Female" };
+        // for (let key in person) {
+        //     console.log(key + ":" + person[key]);
+        // }
+
+        // //for of loop 
+        // let a=[1,2,3,4,5];
+        // for(let value of a){
+        //     console.log(value);
+        // }
+
+        /*const name1 = () => 
+            console.log('hello1');
+            console.log('hiii1');
+            
+        
+        name1();
+
+        const name = function () {
+            console.log('hello');
+
+        }
+        name();*/
+
+        console.log('hello'.length);
+        console.log('HIIIII'.toLowerCase());
+        console.log('good morning'.toUpperCase());
+
+        const object1 = {
+            message: 'hello'
+        };
+        const object2 = object1;
+
+        object1.message = 'good morning';
+        console.log(object1);
+        console.log(object2);
+
+        const object3 = {
+            message: 'good morning'
+        };
+        console.log(object3 === object1);
+        console.log(object2 === object1);
+
+        const object4 = {
+            message: 'good morning',
+            price: 800
+        };
+
+        const { message, price } = object4;
+        console.log(message);
+        console.log(price);
+
+        const object5 ={
+            //message:message
+            message,
+            //method: function function1() 
+            method(){
+                console.log('method');
+                
+            }
+        };
+        console.log(object5);
+        object5.method();
+
+
+        
+        
+
+    </script>
+</body>
+
+</html>

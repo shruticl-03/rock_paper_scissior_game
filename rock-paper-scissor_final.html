@@ -62,18 +62,13 @@
     </button>
 
     <button onclick="
-  playGame('scissor');
+  playGame('scissors');
         " class="move-button">
-        <img src="/images/scissors-emoji.png" class="move-icon">
+        <img src="images/scissors-emoji.png" class="move-icon">
     </button>
 
     <p class="js-result result"></p>
-    <p class="js-moves">
-        You
-        <img src="images/rock-emoji.png" class="move-icon">
-        <img src="images/scissors-emoji.png" class="move-icon">
-        Computer
-    </p>
+    <p class="js-moves"></p>
     <p class="js-score score"></p>
 
     <button onclick="
@@ -106,14 +101,14 @@
             const computerMove = pickComputerMove();
             let result = '';
 
-            if (playerMove === 'scissor') {
+            if (playerMove === 'scissors') {
                 if (computerMove === 'rock') {
                     result = 'You lose';
                 }
                 else if (computerMove === 'paper') {
                     result = 'You win';
                 }
-                else if (computerMove === 'scissor') {
+                else if (computerMove === 'scissors') {
                     result = 'Tie';
                 }
 
@@ -125,7 +120,7 @@
                 else if (computerMove === 'paper') {
                     result = 'Tie';
                 }
-                else if (computerMove === 'scissor') {
+                else if (computerMove === 'scissors') {
 
 
                     result = 'You lose';
@@ -138,7 +133,7 @@
                 else if (computerMove === 'paper') {
                     result = 'You lose';
                 }
-                else if (computerMove === 'scissor') {
+                else if (computerMove === 'scissors') {
                     result = 'You win';
                 }
             }
@@ -165,8 +160,8 @@
         Computer`;
 
 
-            alert(`You picked ${playerMove}, Computer picked ${computerMove}, ${result}.
-Wins: ${score.wins}, Losses: ${score.losses}, Tie: ${score.ties}`);
+            //             alert(`You picked ${playerMove}, Computer picked ${computerMove}, ${result}.
+            // Wins: ${score.wins}, Losses: ${score.losses}, Tie: ${score.ties}`);
         }
 
         function updateElement() {
@@ -187,7 +182,7 @@ Wins: ${score.wins}, Losses: ${score.losses}, Tie: ${score.ties}`);
                 computerMove = 'paper';
             }
             else if (randomNumber > 2 / 3 && randomNumber < 1) {
-                computerMove = 'scissor';
+                computerMove = 'scissors';
             }
             return computerMove;
         }
